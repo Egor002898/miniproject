@@ -20,7 +20,7 @@ def get_all_books():
     return books
 
 
-#получить данные конкретной книги по идентификатору
+#получить данные конкретной книги по id 
 @app.get("/books/{book_id}")
 def get_books_by_id(book_id: int):
     for book in books:
